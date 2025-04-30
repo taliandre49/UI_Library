@@ -1,0 +1,85 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+@font-face {
+    font-family: WorkSans;
+    src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf');
+}
+.body{
+    margin: 0 !important;
+    display: flex !important;
+    place-items: center !important;
+    min-width: 320px;
+    min-height: 100vh;
+    font-size: 11px;
+    background-color:hsl(275, 100%, 97%);
+    color: hsl(292, 42%, 14%);
+    font-family: WorkSans;
+    position: relative;
+    z-index:-1;
+}
+.backgroundHeader{
+    position: absolute;
+    z-index:0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width:auto;
+    height: auto;
+    overflow: hidden;
+
+}
+.backgroundHeader img{
+    width: 100%;
+}
+
+
+.card {
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(0, 100%, 100%) !important;
+    border-radius: 1em;
+    text-align: left !important;
+    position: relative;
+    z-index: 2;
+    font-size: 16px;
+    width: 35em;
+  
+  }
+
+.card p{
+    color: hsl(292, 16%, 49%);
+    
+
+}
+
+
+.read-the-docs {
+color: #888;
+}
+
+.buttontextRow{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+.starFAQ {
+    display: flex;
+    flex-direction: row;
+}
+button{
+    margin-left: auto ;
+    justify-content:flex-end;
+    margin-bottom: 1em;
+}
+
+.faqtextItem{
+ 
+   width: fit-content !important;
+}
+
+

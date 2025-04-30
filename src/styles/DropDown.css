@@ -1,0 +1,50 @@
+.dropDownOptions{
+    background-color: white;
+    text-align: left;
+    padding:.5em;
+    
+}
+#multiselect{
+    position: relative; 
+}
+#multiselect button{
+    height: 3em;
+    width: 50em;
+    text-align: left;
+    align-items: center;
+    margin-bottom: .3em;
+    display: flex;
+    flex: 99%;
+    justify-content: space-between;
+
+}
+
+#multiselect button svg{
+   width: 1.5em;
+   height: 1.5em;
+   flex:1%;
+   margin-left: auto;
+    position: absolute;
+    right:20px;
+
+}
+.optionsChecked{
+    background-color:rgba(14, 155, 225, 0.463) !important;
+    border: .05em solid white;
+}
+
+.option>input, .option>label {
+    cursor: pointer;
+}
+.option{
+    cursor: pointer;
+}
+.option:hover{
+    background-color:rgba(14, 155, 225, 0.463) ;
+}
+#multiselect > div{
+    position:absolute;
+    width: 100%;
+    padding:1em;
+
+}

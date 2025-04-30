@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+.container{
+    width:100%;
+    height: 100% ; 
+    position:relative;
+    /* width: 800px;
+    height: 500px; */
+    /* text-align: left; */
+    /* aspect-ratio: 16 / 9; */
+
+}
+.imagebox {  
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block; 
+    z-index: 0;
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: translate 300ms ease-in-out; 
+}
+ 
+.buts {
+    display: flex;
+    flex-direction: row;
+    transition: background-color 100ms ease-in-out;
+}
+
+.buts :hover, .buts :focus-visible {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.butR{
+    all: unset;
+    position: absolute;
+    
+    color:black;
+    font-size: xx-large;
+    font-weight: bold;
+    -webkit-text-stroke: white .02em;
+    /* background-color: blue; */
+    right:0;
+    z-index: 1;
+    top:0;
+    bottom:0;
+    padding: 1rem;
+    cursor: pointer;
+    
+}
+.butL{
+    all: unset;
+    color:black;
+    font-size: xx-large;
+    font-weight: bold;
+    -webkit-text-stroke: white .02em;
+    position: absolute;
+    left:0;
+    z-index:1;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    padding: 1rem;
+
+}
+.butL :hover > * , .butR :hover > * ,
+.butL :focus-visible > * , .butR :focus-visible > *{
+    animation: squish 200ms ease-in-out !important;
+}
+
+@keyframes squish {
+    50%{
+        scale: 1.4 .6;
+    }
+}
+button{
+    all: unset;
+}
+
+#dots{
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    translate: -50%;
+    display:flex;
+    gap:.2rem;
+    z-index: 4;
+
+}
+#dots button{
+    background-color: black;
+    height: 1rem;
+    width: 1rem;
+    display:flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 200ms ease-in-out;
+
+}
+#dots button:hover, #dots button:focus-visible {
+    scale: 1.2;
+}
+
+#dots button.selected{
+    display: flex;
+    position: relative;
+    /* justify-content: center; */
+    place-content: center;
+    /* transform: translateX(-5em); */
+}
+#dots button.selected::before{
+    content: '';
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: white !important;
+    border-radius: 50%;
+    width: .5rem;
+    height: .5rem;
+    color: white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#dots button:focus-visible, #dots button.selected{
+    scale: 1.2;
+    border: .01em solid white;
+    /* border-radius: ; */
+}
+
+.buts :focus-visible, #dots>button:focus-visible{
+    outline: auto;
+}

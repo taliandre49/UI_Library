@@ -1,0 +1,91 @@
+  
+.containerHB{
+    /* position: relative; */
+    background-color:white;
+    width:40vh;
+    height: 50vh;
+    border-radius: 1em;
+    /* aspect-ratio: 16/10; */
+}
+.HBMenu{
+    background-color: rgb(169, 66, 169) !important;
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    position: relative; 
+    border-top-right-radius: 1em;
+    cursor: pointer;
+}
+.HBMenu span{
+   background-color: hsl(292, 42%, 14%, 1);
+   width:80%;
+   height: 8px;
+   border-radius: 1em;
+   position: absolute; 
+   top: 50%;
+   left: 50%; 
+   transform: translate(-50%, -50%);
+   transition: 300ms ease-in-out;
+   /* padding:1em; */
+
+}
+.HBMenu span:nth-child(1){
+    top: 25% !important;
+}
+.HBMenu span:nth-child(3){
+    top:75% !important;
+}
+
+.HBMenu.active span:nth-child(1){
+    top:50%  !important;
+    transform: translate(-50%, -50%) rotate(45deg);
+
+}
+.HBMenu.active span:nth-child(2){
+    opacity: 0;
+}
+.HBMenu.active span:nth-child(3){
+    top:50% !important;
+    transform: translate(-50%,  -50%) rotate(-45deg);
+
+}
+.HBMenu:hover span, .HBMenu:focus-visible span{
+
+    scale:1.05;
+}
+.links{
+    background-color: hsl(292, 42%, 14%, 1);
+    color: white;
+    font-size: 12px;
+    display:flex;
+    flex-direction: column;
+    gap: 0em;
+    width:30%;
+    /* position: absolute; */
+    margin-left:auto !important;
+    /* width: fit-content !important;
+    margin-left:auto; */
+    transition: 3ms ease-in-out;
+
+/*     
+    max-width: 90%;
+    position: absolute;
+    left:50%;
+    translate: -50%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    z-index: -4; */
+}
+.links p{
+    border: .0008em solid white;
+    padding:1em;
+    margin: 0em !important;
+    cursor: pointer;
+}
+
+.links p:hover {
+    border: .0008em dotted white;
+    font-weight: bold;
+    background-color:hsla(292, 47%, 31%, 0.9) !important;
+    
+}
