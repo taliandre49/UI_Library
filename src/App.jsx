@@ -14,7 +14,7 @@ import Car2 from './assets/imgs_Carousel/car-2.jpg';
 import Car3 from './assets/imgs_Carousel/car-3.jpg';
 import Car4 from './assets/imgs_Carousel/car-4.jpg';
 import Car5 from './assets/imgs_Carousel/car-5.jpg';
-import HamburgerMenu from './components/hamburgerMenu';
+import HamburgerMenu from './components/HamburgerMenu';
 import DropDown from './components/DropDown';
 import './styles/Accordion.css';
 
