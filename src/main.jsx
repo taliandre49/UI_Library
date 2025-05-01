@@ -2,7 +2,6 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import '../index.css';
 import App from './App.jsx'
-import Accordian from './accordian.jsx'
 import Background from './components/Background.jsx'
 import Minus from './assets/images/icon-minus.svg';
 import Plus from './assets/images/icon-plus.svg';
