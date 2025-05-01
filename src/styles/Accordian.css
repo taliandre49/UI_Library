@@ -3,7 +3,14 @@
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
-}
+ }
+ .centerbody{
+    max-width: 1280px;
+    margin: 0 auto !important;
+    padding: 2rem;
+    text-align: center !important;
+
+ }
 @font-face {
     font-family: WorkSans;
     src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf');
@@ -38,6 +45,8 @@
 
 
 .card {
+    
+    margin: 0 auto;
     padding: 2em;
     justify-content: center;
     align-items: center;

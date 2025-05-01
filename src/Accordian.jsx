@@ -18,10 +18,7 @@ import Background from './components/Background';
 
 function Accordian() {
     const [activeFAQ, setActiveFAQ] = useState([]);
-    // const [openFAQ, setOpenFAQ] = useState(null);
-    // useEffect(() => {
-     
-    // },[activeFAQ]);
+
     
     const handleClick = (value)=>{
 
@@ -36,7 +33,7 @@ function Accordian() {
             
     <>
     <Background/>
-     <div className= "card"> 
+     <div className= "card centerbody"> 
         <div className= "starFAQ"> <img src = {Star} alt= ""/><h1>FAQs</h1></div>
         <AccordianItem
             triggerFunction = {() => handleClick("1")}

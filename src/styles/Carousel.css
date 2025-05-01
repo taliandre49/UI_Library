@@ -38,9 +38,8 @@
 
 
 .butR{
-    all: unset;
+    all:unset;
     position: absolute;
-    
     color:black;
     font-size: xx-large;
     font-weight: bold;
@@ -79,9 +78,11 @@
         scale: 1.4 .6;
     }
 }
-button{
-    all: unset;
+
+#dots button{
+    all:unset;
 }
+
 
 #dots{
     position: absolute;
