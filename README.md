@@ -38,11 +38,11 @@ import { Accordion, Carousel, ContactForm } from '../pathway';
 function App() {
   return (
     <div>
-      <Accordian /> </div> [note accordian has child reusuable component called AccordianItems ]:
-        <AccordianItem
+      <Accordion /> </div> [note Accordion has child reusuable component called AccordionItems ]:
+        <AccordionItem
             triggerFunction = {() => handleClick("1")}
             accordText= {`according item sub text `}
-            accordTitle={"accordian item Title"}
+            accordTitle={"Accordion item Title"}
             isOpen = {activeFAQ.includes("1")}
         >
       <Carousel items={["Item 1", "Item 2", "Item 3"]} />
@@ -65,7 +65,7 @@ export default App;
 A collapsible component for organizing content in expandable sections.
 ```jsx
 <Accordion /> 
-<AccordianItem
+<AccordionItem
             triggerFunction = {() => handleClick("1")}
             accordText= {`Accordion Title`}
             accordTitle={"Accordion content goes here."}

@@ -2,9 +2,7 @@ import React from "react";
 import BackgroundDesk from '../assets/images/background-pattern-desktop.svg';
 import BackgroundMobile from '../assets/images/background-pattern-desktop.svg';
 import { useState, useEffect } from "react";
-// import styles from '../styles/Accordian.module.css';
-import '../styles/Accordian.css'
-
+import '../styles/Accordion.css';
 
 export const Background = () => {
     // default to laptop screen

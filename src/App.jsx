@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import '../src/styles/App.css';
+// import '../styles/App.css';
+import './styles/App.css';
 import { Routes, Route, Link } from 'react-router-dom';
-import Accordian from './accordian';
+import Accordion from './Accordian';
 import ContactForm from './components/ContactForm';
 import Success from './components/SuccessSubmit';
 import DashBoard from './components/DashBoard';
@@ -15,8 +16,7 @@ import Car4 from './assets/imgs_Carousel/car-4.jpg';
 import Car5 from './assets/imgs_Carousel/car-5.jpg';
 import HamburgerMenu from './components/hamburgerMenu';
 import DropDown from './components/DropDown';
-import '../src/styles/Accordian.css';
-// import styles from '../src/styles/App.module.css';
+import './styles/Accordion.css';
 
 function Home() {
   return (
@@ -44,7 +44,7 @@ function App() {
       <div>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/accordian" element={<div className='centerbody'><Accordian /> </div>} />
+            <Route path="/accordion" element={<div className='centerbody'><Accordion /> </div>} />
             <Route path="/contact" element={<><ContactForm onSuccess = {Updatesuccess} /> {isSuccess && <Success/>}</>} />
             <Route path = "/dashboard" element = {<DashBoard />} ></Route>
             <Route path = "/carousel" element = { <div style = {{maxWidth: '800px', width: '100%',  aspectRatio: '16 / 9' , margin: '0 auto',}}><Carousel images = {IMAGES}/> </div>}></Route>
@@ -57,7 +57,7 @@ function App() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/accordian">Accordian</Link>
+                <Link to="/accordion">Accordion</Link>
               </li>
               <li>
                  <Link to="/contact">Contact</Link>

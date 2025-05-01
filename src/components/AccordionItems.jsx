@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import '../styles/Accordian.css';
-// import styles from '../styles/Accordian.module.css';
+import '../styles/Accordion.css';
+// import styles from '../styles/Accordion.module.css';
 import Minus from '../assets/images/icon-minus.svg';
 import Plus from '../assets/images/icon-plus.svg';
 
 
-export const AccordianItem = ({
+export const AccordionItem = ({
     triggerFunction,
     accordText,
     accordTitle,
@@ -24,4 +24,4 @@ export const AccordianItem = ({
     )
 }
 
-export default AccordianItem
+export default AccordionItem
