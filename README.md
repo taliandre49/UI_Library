@@ -157,6 +157,6 @@ Contributions, issues, and feature requests are welcome! Feel free to check out 
 ## 💬 Contact
 
 For support or inquiries, please reach out at:
-- Email: your-email@example.com
-- GitHub: [@your-username](https://github.com/your-username)
+- Email: taliandre49@gmail.com
+- GitHub: [@taliandre49](https://taliandre49.github.io/profes-web-developer)
 
