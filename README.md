@@ -17,7 +17,7 @@ Welcome to the **React UI Library**, a collection of reusable and responsive com
 
 You can either clone the repo and run it locally or explore the components live:
 
-- 🔗 **[View the deployment](link)** to see components in action.
+- 🔗 **[View the deployment](https://reactuilibrary-iel2uxrdf-taliandre49s-projects.vercel.app/)** to see components in action.
 - 💻 **Download and run locally**:
 
 ```bash
@@ -138,7 +138,7 @@ To contribute to this library:
    npm run dev
    ```
 
-You can also navigate to the [deployment](link) to see the components in action.
+You can also navigate to the [deployment](https://reactuilibrary-iel2uxrdf-taliandre49s-projects.vercel.app/) to see the components in action.
 
 ---
 
